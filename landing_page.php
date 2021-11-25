@@ -21,6 +21,9 @@
                  </div>
   <div>
     <h1>WELCOME TO ASH GYM</h1>
+    <p>ASH GYM is the place to achieve all your body and fitness goals.
+        Join now to start that journey or Sign up for a personal trainer.
+    </p>
   </div>
 
   <div class="buttons">
