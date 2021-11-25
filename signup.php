@@ -8,6 +8,24 @@
     <title>Ash Gym | Sign up</title>
 </head>
 <body>
+<?php
+//validating that it is an ashesi email
+if (isset($_POST['email']) == true && empty($_POST['email'])== false){
+   $email = $_POST['email'];
+   if (!stristr($em,"@") OR !stristr($em,"ashesi.edu.gh")) {
+
+      $msg="Your email address is not correct <BR>"; 
+      
+      $status= "NOTOK";
+      
+      } else {
+      
+      echo " Your email address is OK ";
+      
+      }
+}
+?>
+
     <div class="bg-img">
         <div class="content">
         <img id = "ashesi_logo" src="https://www.ashesi.edu.gh/images/logo-mobile.png">
