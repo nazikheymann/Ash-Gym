@@ -125,14 +125,19 @@ h1{
 }
 
 .buttons{
-  margin: 450px 400px;
+  margin: 200px 370px;
 }
 
-.buttons>ul>li{
+ul>li{
   color: aqua;
   font-size: larger;
   background-color: #fcfcfc;
   display: inline-block;
   margin: 10px;
 
+}
+
+.top_navbar>ul{
+  margin-left: 750px;
+  display: inline-block;
 }
