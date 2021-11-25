@@ -141,3 +141,9 @@ ul>li{
   margin-left: 750px;
   display: inline-block;
 }
+
+p{
+  background-color: #fcfcfc;
+  text-align: center;
+  margin: 50px 500px 10px 250px;
+}
