@@ -7,6 +7,14 @@
     <script src= https://kit.fontawesome.com/b99e675b6e.js></script>
     <title>Ash Gym | Home</title>
     <link rel="stylesheet" href="Homepage.css">
+
+    <nav>
+      <ul>
+        <li><a href="signup.php">Sign Up</a></li>
+        <li><a href="login.php">Login</a></li>
+      </ul>
+    </nav>
+
 </head>
 <body>
     <!-- <div class="wrapper hover_collapse"> -->
@@ -68,6 +76,13 @@
                 </ul>
               </div>
         </div>
+
+        <p>
+          <h1>WELCOME TO ASH GYM</h1>
+          
+        </p>
+
+        
         
 
 
@@ -82,5 +97,7 @@
               document.getElementById("main").style.marginLeft= "0";
             }
             </script>
+
+        
 </body>
 </html>
