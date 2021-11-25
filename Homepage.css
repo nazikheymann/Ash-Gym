@@ -108,7 +108,7 @@
     padding: 16px;
   }
 
-  nav{
+ /* nav{
     margin: 450px 400px;
   }
   
@@ -119,6 +119,20 @@
     display: inline-block;
     margin: 10px;
 
-  }
+  }*/
+h1{
+  margin: 60px 260px;
+}
 
-  
+.buttons{
+  margin: 450px 400px;
+}
+
+.buttons>ul>li{
+  color: aqua;
+  font-size: larger;
+  background-color: #fcfcfc;
+  display: inline-block;
+  margin: 10px;
+
+}
