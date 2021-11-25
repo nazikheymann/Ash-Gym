@@ -8,15 +8,19 @@
     <title>Ash Gym | Home</title>
     <link rel="stylesheet" href="Homepage.css">
 
-    <nav>
+</head>
+<body>
+  <div>
+    <h1>WELCOME TO ASH GYM</h1>
+  </div>
+
+  <div class="buttons">
       <ul>
         <li><a href="signup.php">Sign Up</a></li>
         <li><a href="login.php">Login</a></li>
       </ul>
-    </nav>
+</div>
 
-</head>
-<body>
     <!-- <div class="wrapper hover_collapse"> -->
 
         <!-- Top bar -->
@@ -77,10 +81,8 @@
               </div>
         </div>
 
-        <p>
-          <h1>WELCOME TO ASH GYM</h1>
-          
-        </p>
+        
+        
 
         
         
