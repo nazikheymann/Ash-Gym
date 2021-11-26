@@ -61,9 +61,9 @@
                     </li>
               
                     <li>
-                    <a href="equipment_demo.html">
+                    <a href="equipment_page.php">
                   <span class="icon"><i class="fa fa-dumbbell"></i></span>
-                  <span class="text">Equipment</span>
+                  <span class="text">Products/Eqpt</span>
                     </a>
                     </li>
                     <li>
