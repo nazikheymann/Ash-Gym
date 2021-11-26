@@ -45,7 +45,7 @@
            showBtn.style.color = "#3498db";
          }else{
            pass_field.type = "password";
-           showBtn.textContent = "SHOW";
+           showBtn.textContent = "HIDE";
            showBtn.style.color = "#222";
          }
         });
