@@ -8,51 +8,78 @@
     <title>Ash Gym | Sign up</title>
 </head>
 <body>
+
 <?php
 //validating that it is an ashesi email
-if (isset($_POST['email']) == true && empty($_POST['email'])== false){
-   $email = $_POST['email'];
-   if (!stristr($em,"@") OR !stristr($em,"ashesi.edu.gh")) {
+//if (isset($_POST['email']) == true && empty($_POST['email'])== false){
+   //$email = $_POST['email'];
+   //if (!stristr($em,"@") OR !stristr($em,"ashesi.edu.gh")) {
 
-      $msg="Your email address is not correct <BR>"; 
+     // $msg="Your email address is not correct <BR>"; 
       
-      $status= "NOTOK";
+      ///$status= "NOTOK";
       
-      } else {
+      //} else {
       
-      echo " Your email address is OK ";
+      //echo " Your email address is OK ";
       
-      }
-}
+      //}
+//}
+
+//get form data
+
+
+
+
+
+
+//Create connection
+
+
+
+// if($conn->query($sql) === TRUE) {
+//     echo "New record created successfully: ";
+//     echo $f_name;
+// } else {
+//     echo "Error: " . $sql . "<br>" . $conn->error; 
+// }
+
+
+
 ?>
 
     <div class="bg-img">
         <div class="content">
-        <img id = "ashesi_logo" src="https://www.ashesi.edu.gh/images/logo-mobile.png">
            <header>Welcome to Ash Gym</header>
-           <form action="#">
+           <form action="#" method ="POST" action="gym_connection.php">
             <div class="field">
                 <span class="fa fa-user"></span>
-                <input type="text" required placeholder="Name">
+                <input type="text" name="f_name"required placeholder="First Name">
              </div><br>
+
+             <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="text" name="l_name" required placeholder="Last Name">
+             </div><br>
+
               <div class="field">
                  <span class="fa fa-user"></span>
-                 <input type="text" required placeholder="Email">
+                 <input type="text" name="email" required placeholder="Email">
               </div>
               <div class="field space">
                  <span class="fa fa-lock"></span>
-                 <input type="password" class="pass-key" required placeholder="Password">
+                 <input type="password" class="pass-key" name="password" required placeholder="Password">
               </div><br>
               <div class="field">
                 <span class="fa fa-user"></span>
-                <input type="text" required placeholder="Confirm Password">
+                <input type="text" name="c_password" required placeholder="Confirm Password">
              </div>
               <div class="pass">
                  <a href="#">Forgot Password?</a>
               </div>
 
               <div class="field">
-                 <input type="submit" value="SIGN UP">
+                 <input type="submit" name ="sign_up" value="SIGN UP">
               </div>
            </form>
            <div class="login">
@@ -60,4 +87,5 @@ if (isset($_POST['email']) == true && empty($_POST['email'])== false){
               <a href="login.php">Login</a>
            </div>
 </body>
+
 </html>

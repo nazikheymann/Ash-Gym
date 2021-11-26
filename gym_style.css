@@ -5,17 +5,8 @@
   box-sizing: border-box;
   user-select: none;
 }
-
-#ashesi_logo{
-  width: 100px;
-  height: 30px;
-  /* align-items: center; */
-}
-
-
 .bg-img{
-  /* background: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/blog_posts/webmd-doctors/1800x1200_empty-gym.jpg'); */
-  background: url('gym_pictures/DSC_0251.JPG');
+  background: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/blog_posts/webmd-doctors/1800x1200_empty-gym.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;

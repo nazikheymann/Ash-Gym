@@ -66,6 +66,7 @@ CREATE TABLE Client (
 CREATE INDEX testname on Client(fname);
 
 
+/*
 CREATE TABLE Attendance (
     staff_id INT,
     client_id INT,
@@ -76,6 +77,7 @@ CREATE TABLE Attendance (
     FOREIGN KEY (staff_id)
         REFERENCES Staff (staff_id) on update cascade on delete cascade
 );
+*/
 
 CREATE TABLE Trains (
     trainer_id INT NOT NULL,
@@ -175,6 +177,7 @@ INSERT INTO Client VALUES (1,'Nazik', 'Heymann', 'Female', '+233544920383', 'goi
 
 
 
+/*
 INSERT INTO Attendance Values(1,2,'Present','2020-01-12 08:00:30'),
 				       (2,1, 'Present', '2021-03-22 07:50:01'),
 				       (3,3,  'Present', '2011-08-21 07:05:01'),
@@ -185,9 +188,10 @@ INSERT INTO Attendance Values(1,2,'Present','2020-01-12 08:00:30'),
 				       (1,8,  'Present', '2020-06-01 08:00:01'),
 				       (NULL,2,  'Present', '2003-09-01 07:30:01'),
 				       (7,1, 'Present', '2021-09-09 07:22:01');
+                       */
 
 
-INSERT INTO Trains Values (2, 1, '2020-11-29',NULL),
+/*INSERT INTO Trains Values (2, 1, '2020-11-29',NULL),
 						  (2, 2, '2020-12-30',NULL),
 						  (5, 3, '2020-12-01','2021-04-10'),
 						  (5, 4, '2021-04-09',NULL),
@@ -197,6 +201,7 @@ INSERT INTO Trains Values (2, 1, '2020-11-29',NULL),
 						  (8, 8, '2021-01-04',NULL),
 						  (8, 9, '2021-02-03','2021-04-17'),
 						  (8, 10, '2021-01-05','2021-03-31');
+                          */
                           
 INSERT INTO Products Values(1,'Protein_powder', 50, 50.00),
 				       (2,'Food_supplements', 60, 100.00),

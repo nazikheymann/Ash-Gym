@@ -45,7 +45,7 @@
             <div class="sidebar_inner">
                 <ul>
                     <li>
-                    <a href="gym_demo.html">
+                    <a href="homepage.php">
                   <span class="icon"><i class="fa fa-home"></i></span>
                   <span class="text">Home</span>
                     </a>
@@ -67,9 +67,6 @@
                 </ul>
               </div>
         </div>
-        
-
-
         <script>
             function openNav() {
               document.getElementById("mysidebar").style.width = "250px";

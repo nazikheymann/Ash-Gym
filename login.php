@@ -10,7 +10,6 @@
 <body>
     <div class="bg-img">
         <div class="content">
-           <img id = "ashesi_logo" src="https://www.ashesi.edu.gh/images/logo-mobile.png">
            <header>Welcome to Ash Gym</header>
            <form action="#">
               <div class="field">

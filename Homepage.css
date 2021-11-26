@@ -9,9 +9,7 @@
    
    body{
     /* background: #f5f5f5; */
-    background-image: url("DSC_0252.JPG");
-    background-color: white;
-    background-size: cover;
+    background: #ffffff;
    }
 
    .top_navbar{
@@ -107,43 +105,4 @@
     transition: margin-left .5s;
     padding: 16px;
   }
-
- /* nav{
-    margin: 450px 400px;
-  }
   
-  nav>ul>li{
-    color: aqua;
-    font-size: larger;
-    background-color: #fcfcfc;
-    display: inline-block;
-    margin: 10px;
-
-  }*/
-h1{
-  margin: 60px 260px;
-}
-
-.buttons{
-  margin: 200px 370px;
-}
-
-ul>li{
-  color: aqua;
-  font-size: larger;
-  background-color: #fcfcfc;
-  display: inline-block;
-  margin: 10px;
-
-}
-
-.top_navbar>ul{
-  margin-left: 750px;
-  display: inline-block;
-}
-
-p{
-  background-color: #fcfcfc;
-  text-align: center;
-  margin: 50px 500px 10px 250px;
-}

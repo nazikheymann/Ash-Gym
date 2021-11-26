@@ -45,7 +45,7 @@
             <div class="sidebar_inner">
                 <ul>
                     <li>
-                    <a href="gym_demo.html">
+                    <a href="homepage.php">
                   <span class="icon"><i class="fa fa-home"></i></span>
                   <span class="text">Home</span>
                     </a>
@@ -53,7 +53,7 @@
               
                     <li>
                     <a href="equipment_demo.php">
-                  <span class="icon"><i class="fa fa-dumbbell"></i></span>
+                    <span class="icon"><i class="fa fa-dumbbell"></i></span>
                   <span class="text">Equipment</span>
                     </a>
                     </li>
@@ -68,7 +68,9 @@
               </div>
         </div>
         
-
+            <?php
+                include("../test/index.php");
+            ?>
 
         <script>
             function openNav() {
