@@ -9,7 +9,10 @@
    
    body{
     /* background: #f5f5f5; */
-    background: #ffffff;
+    background-image: url("DSC_0252.JPG");
+    opacity: 0.8;
+    background-color: white;
+    background-size: cover;
    }
 
    .top_navbar{
@@ -105,4 +108,20 @@
     transition: margin-left .5s;
     padding: 16px;
   }
+
+  nav{
+    margin: 450px 400px;
+  }
+  
+  nav>ul>li{
+    color: aqua;
+    font-size: larger;
+    background-color: #fcfcfc;
+    display: inline-block;
+    margin: 10px;
+
+  }
+  .row{
+  background-color: white;
+}
   

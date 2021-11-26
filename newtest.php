@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "test/config.php";
+require_once "config.php";
  
 // Define variables and initialize with empty values
 $fname = $lname = $email = "";
@@ -58,7 +58,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Records created successfully. Redirect to landing page
-                header("location: ..Final-Group-Project/members_page.php");
+                header("location: Homepage.php");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -73,55 +73,53 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Record</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="gym_style.css">
-    <title>Ash Gym | Sign up</title>
+    <style>
+        .wrapper{
+            /* width: 600px; */
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-   <div class="bg-img">
-       <div class="content">
-        <img id = "ashesi_logo" src="https://www.ashesi.edu.gh/images/logo-mobile.png">
-           <header>Welcome to Ash Gym</header>
-           <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="field">
-               <span class="invalid-feedback"><?php echo $fname_err;?></span>
-                <input type="text" name="fname" class="form-control <?php echo (!empty($fname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $fname; ?>" required placeholder="First Name">
-             </div><br>
-             <div class="field">
-             <span class="invalid-feedback"><?php echo $lname_err;?></span>
-               <input type="text" name="lname" class="form-control <?php echo (!empty($lname_err)) ? 'is-invalid' : ''; ?>" value = "<?php echo $lname; ?>" required placeholder="Last Name"></textarea>
-             </div><br>
-              <div class="field">
-                 <span class="invalid-feedback"><?php echo $email_err;?></span>
-                 <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>" required placeholder="Email">
-              </div>
-              <div class="field space">
-                 <span class="fa fa-lock"></span>
-                 <input type="password" class="pass-key" required placeholder="Password">
-              </div><br>
-              <div class="field">
-                <span class="fa fa-user"></span>
-                <input type="password" required placeholder="Confirm Password">
-             </div>
-              <div class="pass">
-                 <a href="#">Forgot Password?</a>
-              </div>
-
-              <div class="field">
-                 <input type="submit" a href="../members_page.php" class="btn btn-primary" value="SIGN UP">
-              </div>
-
-
-           </form>
-           <div class="login">
-              Already have an account?
-              <a href="login.php">Login</a>
-           </div>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-img">
+                        <div class="content">
+                            <img id = "ashesi_logo" src="https://www.ashesi.edu.gh/images/logo-mobile.png">
+                            <header>Welcome to Ash Gym</header>
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                            <div class="field">
+                            
+                            <input type="text" name="fname" class="form-control <?php echo (!empty($fname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $fname; ?>" required placeholder = "First Name">
+                            <span class="invalid-feedback"><?php echo $name_err;?></span>
+                        </div><br>
+                        <div class="field">
+                            
+                            <input type="text" name="lname" class="form-control <?php echo (!empty($lname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $lname; ?>" required placeholder = "Last Name">
+                            <span class="invalid-feedback"><?php echo $address_err;?></span>
+                        </div><br>
+                        <div class="field">
+                            
+                            <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>" required placeholder = "Email">
+                            <span class="invalid-feedback"><?php echo $salary_err;?></span>
+                        </div><br>
+                        <div class="field">
+                        <input type="submit" class="btn btn-primary" value="Sign Up">
+                        <a href="Homepage.php"></a>
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
 </body>
 </html>
