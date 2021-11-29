@@ -84,7 +84,7 @@ if(isset($_GET["client_id"]) && !empty(trim($_GET["client_id"]))){
                         <label>Email</label>
                         <p><b><?php echo $row["email"]; ?></b></p>
                     </div>
-                    <p><a href="Homepage.php" class="btn btn-primary">Back</a></p>
+                    <p><a href="members_page.php" class="btn btn-primary">Back</a></p>
                 </div>
             </div>        
         </div>

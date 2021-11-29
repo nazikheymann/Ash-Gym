@@ -12,20 +12,14 @@
         <div class="content">
            <img id = "ashesi_logo" src="https://www.ashesi.edu.gh/images/logo-mobile.png">
            <header>Welcome to Ash Gym</header>
-           <form action="#">
+           <form action="Homepage.php" method="post">
               <div class="field">
                  <span class="fa fa-user"></span>
                  <input type="text" required placeholder="Email">
               </div>
-              <div class="field space">
-                 <span class="fa fa-lock"></span>
-                 <input type="password" class="pass-key" required placeholder="Password">
-              </div>
-              <div class="pass">
-                 <a href="#">Forgot Password?</a>
-              </div>
               <div class="field">
                  <input type="submit" value="LOGIN">
+                 <a href="Homepage.php"></a>
               </div>
            </form>
 

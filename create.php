@@ -58,7 +58,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Records created successfully. Redirect to landing page
-                header("location: ../Final-Group-Project/client_page.php");
+                header("location: members_page.php");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -80,6 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Create Record</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Homepage.css">
     <style>
         .wrapper{
             width: 600px;
@@ -111,7 +112,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <span class="invalid-feedback"><?php echo $salary_err;?></span>
                         </div>
                         <input type="submit" class="btn btn-primary" value="Submit">
-                        <a href="../members_page.php" class="btn btn-secondary ml-2">Cancel</a>
+                        <a href="members_page.php" class="btn btn-secondary ml-2">Cancel</a>
                     </form>
                 </div>
             </div>        
